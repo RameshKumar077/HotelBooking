@@ -14,7 +14,7 @@ import RoomDetails from './pages/RoomDetails'
 import Footer from './components/Footer'
 import MyBookings from './pages/MyBookings'
 import Loader from './components/Loader'
-
+import Testimonial from './components/Testimonial '
 const App = () => {
 
   // Check Is Route Starts With Owner
@@ -31,6 +31,7 @@ const App = () => {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/rooms' element={<AllRooms />} />
+          <Route path='/testimonial' element={<Testimonial />} />
         <Route path='/rooms/:id' element={<RoomDetails />} />
         <Route path='my-bookings' element={<MyBookings />} />
         < Route path="/loader/:nextUrl" element={<Loader />} />

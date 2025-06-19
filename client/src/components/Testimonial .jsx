@@ -11,16 +11,16 @@ const Testimonial = () => {
                 {testimonials.map((testimonial) => (
                     <div key={testimonial.id} className='bg-white p-6 rounded-xl shadow'>
                         <div className='flex items-center gap-3'>
-                            <img className='w-12 h-12 rounded-full' src={testimonial.image} alt={testimonial.name} />
+                            <img className='w-17 h-17 rounded-full' src={testimonial.image} alt={testimonial.name} />
                             <div>
                                 <p className='font-playfair text-xl'>{testimonial.name}</p>
-                                <p className='text-gray-500'>{testimonial.location}</p>
+                                <p className='text-gray-100'>{testimonial.location}</p>
                             </div>
                         </div>
                         <div className='flex items-center gap-1 mt-4'>
                            <StarRating />
                         </div>
-                        <p className='text-gray-500 max-w-90 mt-4'>"I've used many booking platforms before, but none compare to the personalized experience and attention to detail that QuickStay provides. Their curated selection of hotels is unmatched."</p>
+                        <p className='text-gray-500 max-w-90 mt-4'>{testimonial.review}</p>
                     </div>
                 ))}
             </div>
